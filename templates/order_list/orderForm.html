@@ -1,0 +1,32 @@
+{% extends 'order_list/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+<section class="order_form">
+<div class="container">
+ 
+        <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{meal_data.image}}" alt="Card image cap">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item text-center">اسم الوجبة | {{meal_data.name_meal}}</li>
+                  <li class="list-group-item text-center">السعر |  ${{meal_data.price}} </li>
+                  <li class="list-group-item text-center">{{meal_data.post_update}}</li>
+                </ul>
+              </div>
+
+        
+    <div class="form" > 
+        <div class="form-group col-md-6">
+        <form method="post">
+            {% csrf_token %}
+            <p class=" p-style text-center">اطلب هنا </p>
+            {{form|crispy}}
+            <button type="submit" class="btn ">أطلب الان </button>
+        </form>
+    </div>
+</div>
+</div>
+ 
+</section>
+{% endblock content %}
+

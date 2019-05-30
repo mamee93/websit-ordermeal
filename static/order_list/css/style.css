@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'Tajawal';
+    src: url('../fonts/Tajawal-Regular.ttf')  format("truetype"),
+         local('Tajawal');
+  }
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Tajawal';
+}
+body{
+    background:#ffede7;
+  }
+  
+  .carousel-inner,
+  .carousel-item{
+    height: 500px;
+    background: #000;
+  }
+
+  .carousel-item img{
+    opacity: .7;
+    filter: opacity(70);
+    height: 100%;
+    object-fit: cover;
+  }
+
+  nav {direction: rtl;}
+
+  html {
+    /* font-size: 62.5%;  */
+    font-family: 'Tajawal';
+  }
+  /** start index list page **/
+  
+
+.btn-group .color-btn{
+  background: #dc3545;
+  padding: 10px;
+  margin: 4px ;
+  border-radius: 5px;
+}
+
+.text-meal{
+      font-size: 30px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding: 20px;
+       
+      
+  }
+  .text-h1{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+  }
+ 
+ a.color-btn{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: #dc3545;
+  color: #fff;
+  padding: 11px;
+  border-radius: 10px;
+}
+
+
+
+.meal_list .card{
+    margin: 20px auto;
+    width: 200px;
+  }
+ .meal_list .card-title{
+      margin-top: 10px;
+      margin-bottom: 30px;
+  }
+.meal_list .card-body .f-l{
+    float: right;
+    border: 0;
+    padding: 7px;
+     
+  }
+  
+.card-body .f-2{
+    float: left;
+    padding: 7px;
+    
+      }
+ 
+ a {
+        color: #fff;
+        text-decoration: none;
+        background-color: transparent;
+        text-decoration: none;
+ }          
+ 
+ /** end index list page **/
+
+  /** start details  page **/
+  .meal_list_order{
+    font-family: 'Tajawal';
+    margin-bottom: 50px;
+  }
+  .text-meal {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    font-family: 'Tajawal';
+
+}
+.meal_list_order .card {
+   width: 400px;
+    
+  margin: 30px auto;
+}
+.meal_list_order .btn{
+  background: #dc3545;
+ color: #fff;
+}
+.meal_list_order .card-title,
+.card-text{
+  font-size:20px; 
+}
+ .small, small {
+  font-size: 73%;
+  font-weight: 400;
+}
+ /** end details  page **/
+ /** start add form meal  page **/
+ .add_form{
+    background:#dde1e4;
+    margin: 50px auto;
+    width: 500px;
+    padding: 50px;
+ }
+  
+ .col-form-label {
+     color: #fff;
+     font-size: 15px;
+     margin-bottom: 20px;
+     font-family: 'Tajawal';
+ }
+  /** end add form meal  page **/
+  
+/***form order meal **/
+  .p-style{
+    font-size: 30px;
+    padding-top: 50px;
+    font-family: 'Tajawal';
+    color: #fff;
+  }
+ 
+/**end form order meal **/
+
+
+/** start Order list page **/
+.order_form .card{
+  margin: 90px  auto;
+ 
+}
+.form-group {
+  
+  margin: 50px auto;
+  background:#dc3545;
+}
+
+.form-group .btn{
+  background:#FFF;
+  border: 1 solid #dde1e4;
+  margin: 10px 20px 50px;
+  color: #dc3545;
+}
+
+ /** end Order list page **/
+
+ 
+ a:hover{
+   color: #fff;
+   font-family: 'Tajawal';
+ }
+
+/* order-list-admin page */
+.user-order  {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Tajawal'; 
+}
+.order-list .card{
+  
+  margin-bottom: 60px;
+}
+.order-list .card .card-body .card-title{
+  font-family: 'Tajawal';
+
+}
+.order-list .card .card-text{
+  font-family: 'Tajawal';
+  font-size: 13px;
+
+}
+/*end order-list-admin page */
+
+/* order-success page */
+.order-success .card{
+  margin: 50px auto;
+  margin: 
+}
+.order-success a{color: black;}
+/*end order-success page */
+
+
+/**footer**/
+footer{
+  background: #dc3545;
+}
+ 
+ 
+
+
+
+
+
+ 

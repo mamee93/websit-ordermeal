@@ -1,0 +1,42 @@
+{% extends 'order_list/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<section class="order-list">
+<div class="container">
+       
+                        <h1 class="user-order text-center">جميع طلبات المستخدمين</h1>
+ <div class="row">
+                {% for list_order in order_lists %}
+
+        <div class="col-md-3">
+                <div class="card" >
+                        <img  class="card-img-top" src="{{list_order.order.image}}" alt="card-img"/>
+                  <div class="card-body">
+                        <h5 class="card-title  text-center"> {{list_order.order}} | أسم الوجبة  </h5>
+                        <hr>
+                        <p class="card-text  text-center"> {{list_order.name}} | أسم العميل </p>
+                        <hr>
+                        <p class="card-text  text-center"> {{list_order.email}} |ايميل</p>
+                        <hr>
+                        <p class="card-text  text-center"> {{list_order.location}} |الموقع</p>
+                        <hr>
+                        <p class="card-text  text-center"> {{list_order.Number_of_meal}} | عدد الوجبة </p>
+                        <hr>
+                        <p class="card-text  text-center"> {{list_order.order_date}} |  تاريخ الطلب</p>
+                        <hr>
+                        <div class="deleted"> <a class="color-btn" href="{% url 'delete' list_order.id %}">الغاء</a></div>
+                        </div>
+                       
+                </div>
+        </div>
+{% endfor %}
+
+</div><!--row-->
+ 
+               
+</div><!----container-->
+ 
+</section>
+{% endblock content %}

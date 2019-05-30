@@ -1,0 +1,28 @@
+{% extends 'order_list/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="order-success">
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{% static 'order_list/image/g.jpg' %}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title text-center">شكرا لك تم الطلب</h5>
+      <hr>
+      <p class="card-text text-center"> لعودة لصفحة الرئيسة <a class="clik" href="/">أضغط هنا</a>  </p>
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+{% endblock content %}

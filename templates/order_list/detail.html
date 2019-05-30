@@ -1,0 +1,31 @@
+{% extends 'order_list/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<section class="meal_list_order" style="margin: 30px auto;">
+
+  <div class=" container">
+
+    <p class="text-meal text-center">أطلب وأستمتع بجميع وجباتنا الذيذه </p>
+    <h1 class="text-center"> اطلب الان </h1>
+
+
+
+    <div class="card">
+        <img class="card-img-top" src="{{details.image}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{ details.name_meal }}</h5>
+          <p class="card-text">{{ details.content }}</p>
+          <p class="card-text"><small class="text-muted"><a href="{% url 'order_Forms' details.id  %}" class="btn">طلب</a></small></p>
+        </div>
+      </div>
+
+
+</div>
+  </div>
+</section>
+
+
+
+{% endblock content %}
